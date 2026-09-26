@@ -1,0 +1,358 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------------------------------ */
+/*  Amiamie Custom Typography                                         */
+/* ------------------------------------------------------------------ */
+/* Amiamie Regular */
+@font-face {
+  font-family: "Amiamie";
+  src: url("/fonts/amiamie/otf/Amiamie-Regular.otf") format("opentype"),
+    url("/fonts/amiamie/ttf/Amiamie-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Amiamie Regular Italic */
+@font-face {
+  font-family: "Amiamie";
+  src: url("/fonts/amiamie/otf/Amiamie-Italic.otf") format("opentype"),
+    url("/fonts/amiamie/ttf/Amiamie-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Amiamie Light */
+@font-face {
+  font-family: "Amiamie";
+  src: url("/fonts/amiamie/otf/Amiamie-Light.otf") format("opentype"),
+    url("/fonts/amiamie/ttf/Amiamie-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Amiamie Light Italic */
+@font-face {
+  font-family: "Amiamie";
+  src: url("/fonts/amiamie/otf/Amiamie-LightItalic.otf") format("opentype"),
+    url("/fonts/amiamie/ttf/Amiamie-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Amiamie Black */
+@font-face {
+  font-family: "Amiamie";
+  src: url("/fonts/amiamie/otf/Amiamie-Black.otf") format("opentype"),
+    url("/fonts/amiamie/ttf/Amiamie-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Amiamie Black Italic */
+@font-face {
+  font-family: "Amiamie";
+  src: url("/fonts/amiamie/otf/Amiamie-BlackItalic.otf") format("opentype"),
+    url("/fonts/amiamie/ttf/Amiamie-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Amiamie-Round Variants */
+@font-face {
+  font-family: "Amiamie-Round";
+  src: url("/fonts/amiamie/otf/Amiamie-RegularRound.otf") format("opentype"),
+    url("/fonts/amiamie/ttf/Amiamie-RegularRound.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amiamie-Round";
+  src: url("/fonts/amiamie/otf/Amiamie-BlackRound.otf") format("opentype"),
+    url("/fonts/amiamie/ttf/Amiamie-BlackRound.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amiamie-Round";
+  src: url("/fonts/amiamie/otf/Amiamie-BlackItalicRound.otf") format("opentype"),
+    url("/fonts/amiamie/ttf/Amiamie-BlackItalicRound.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Onyx Theme — scoped a #bio-root para no filtrar al espacio        */
+/* ------------------------------------------------------------------ */
+#bio-root {
+  --bg: #0a0a0a;
+  --fg: #f5f5f4;
+  --muted: #a1a1aa;
+  --soft: #63636b;
+  --line: rgba(255, 255, 255, 0.10);
+  --stripe: rgba(255, 255, 255, 0.055);
+  --hover: rgba(255, 255, 255, 0.05);
+  --card: #101010;
+  --chip: #161616;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-sans: 'Amiamie', 'Inter', system-ui, sans-serif;
+  --font-amiamie-round: 'Amiamie-Round', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  position: relative;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  background-color: var(--bg);
+  color: var(--fg);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  text-rendering: optimizeLegibility;
+}
+
+html.light #bio-root {
+  --bg: #fcfcfb;
+  --fg: #18181b;
+  --muted: #52525b;
+  --soft: #a1a1aa;
+  --line: rgba(0, 0, 0, 0.10);
+  --stripe: rgba(0, 0, 0, 0.055);
+  --hover: rgba(0, 0, 0, 0.04);
+  --card: #ffffff;
+  --chip: #f4f4f5;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Preflight de Tailwind replicado 1:1, scoped bajo #bio-root        */
+/*  (corePlugins.preflight está desactivado para no afectar /space)   */
+/* ------------------------------------------------------------------ */
+#bio-root,
+#bio-root *,
+#bio-root ::before,
+#bio-root ::after {
+  border-width: 0;
+  border-style: solid;
+  border-color: var(--line);
+}
+
+#bio-root :is(blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre) {
+  margin: 0;
+}
+
+#bio-root :is(h1, h2, h3, h4, h5, h6) {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+#bio-root :is(menu, ol, ul) {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#bio-root a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+#bio-root b,
+#bio-root strong {
+  font-weight: bolder;
+}
+
+#bio-root :is(code, kbd, samp, pre) {
+  font-family: var(--font-mono);
+  font-size: 1em;
+}
+
+#bio-root small {
+  font-size: 80%;
+}
+
+#bio-root :is(sub, sup) {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+#bio-root sub {
+  bottom: -0.25em;
+}
+
+#bio-root sup {
+  top: -0.5em;
+}
+
+#bio-root table {
+  text-indent: 0;
+  border-color: inherit;
+  border-collapse: collapse;
+}
+
+#bio-root hr {
+  height: 0;
+  color: inherit;
+  border-top-width: 1px;
+}
+
+#bio-root :is(button, input, optgroup, select, textarea) {
+  font-family: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+#bio-root :is(button, select) {
+  text-transform: none;
+}
+
+#bio-root :is(button, [type='button'], [type='reset'], [type='submit']) {
+  -webkit-appearance: button;
+  appearance: button;
+  background-color: transparent;
+  background-image: none;
+}
+
+#bio-root :is(button, [role='button']) {
+  cursor: pointer;
+}
+
+#bio-root :disabled {
+  cursor: default;
+}
+
+#bio-root progress {
+  vertical-align: baseline;
+}
+
+#bio-root summary {
+  display: list-item;
+}
+
+#bio-root textarea {
+  resize: vertical;
+}
+
+#bio-root :is(input, textarea)::placeholder {
+  opacity: 1;
+  color: var(--soft);
+}
+
+#bio-root :is(img, svg, video, canvas, audio, iframe, embed, object) {
+  display: block;
+  vertical-align: middle;
+}
+
+#bio-root :is(img, video) {
+  max-width: 100%;
+  height: auto;
+}
+
+#bio-root abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+#bio-root fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+#bio-root legend {
+  padding: 0;
+}
+
+#bio-root [hidden] {
+  display: none;
+}
+
+/* Smooth transitions for theme color variables (scoped) */
+#bio-root,
+#bio-root :is(header, main, div, span, p, h1, h2, h3, a, button, input) {
+  transition-property: color, background-color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+}
+
+/* Selection (scoped) */
+#bio-root::selection,
+#bio-root ::selection {
+  background: var(--fg);
+  color: var(--bg);
+}
+
+/* ------------------------------------------------------------------ */
+/*  Scrollbar del template — activa solo mientras el bio está montado */
+/* ------------------------------------------------------------------ */
+html.bio-active {
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.10) #0a0a0a;
+}
+
+html.bio-active::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+html.bio-active::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+html.bio-active::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 999px;
+}
+
+html.bio-active::-webkit-scrollbar-thumb:hover {
+  background: #63636b;
+}
+
+/* RGB Chromatic Aberration Text Shadow */
+.text-glitch {
+  text-shadow: -1.5px 0 0 rgba(0, 200, 255, 0.6), 1.5px 0 0 rgba(255, 80, 0, 0.6);
+}
+
+/* Repeating Linear Gradient Stripes */
+.bg-stripes {
+  background-image: repeating-linear-gradient(315deg, var(--stripe) 0, var(--stripe) 1px, transparent 1px, transparent 7px);
+}
+
+/* CRT Scanline Animation keyframes */
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.animate-scanline {
+  animation: scanline 8s linear infinite;
+}
+
+.grid-rows-7 {
+  grid-template-rows: repeat(7, minmax(0, 1fr));
+}

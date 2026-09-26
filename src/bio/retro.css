@@ -1,0 +1,545 @@
+html[data-design="retro2000"] #bio-root {
+  --bg: #008080;
+  --fg: #000000;
+  --muted: #c0c0c0;
+  --soft: #000080;
+  --line: #000000;
+  --stripe: #ffffff;
+  --hover: #ffff00;
+  --card: #c0c0c0;
+  --chip: #c0c0c0;
+  --font-serif: "Times New Roman", Times, serif;
+  --font-sans: Tahoma, "MS Sans Serif", Arial, sans-serif;
+  --font-mono: "Courier New", Courier, monospace;
+  min-height: 100vh;
+  background: #008080;
+  color: #000000;
+  font-family: Tahoma, "MS Sans Serif", Arial, sans-serif;
+  font-synthesis: none;
+  -webkit-font-smoothing: none;
+  image-rendering: pixelated;
+}
+
+html[data-design="retro2000"] #bio-root *,
+html[data-design="retro2000"] #bio-root *::before,
+html[data-design="retro2000"] #bio-root *::after {
+  box-shadow: none;
+}
+
+html[data-design="retro2000"] #bio-root .lv-home {
+  --lv-bg: #008080;
+  --lv-fg: #000000;
+  --lv-muted: #c0c0c0;
+  --lv-muted-fg: #111111;
+  --lv-border: #000000;
+  --lv-font-sans: Tahoma, "MS Sans Serif", Arial, sans-serif;
+  --lv-font-mono: "Courier New", Courier, monospace;
+  min-height: 100vh;
+  background: #008080;
+  color: #000000;
+  font-family: Tahoma, "MS Sans Serif", Arial, sans-serif;
+  -webkit-font-smoothing: none;
+}
+
+html[data-design="retro2000"] #bio-root .lv-section {
+  padding: 14px 0;
+}
+
+html[data-design="retro2000"] #bio-root .lv-section > .lv-container,
+html[data-design="retro2000"] #bio-root .lv-home > .lv-container {
+  max-width: 780px;
+  padding: 16px 20px;
+  border: 3px outset #ffffff;
+  background: #c0c0c0;
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-section + .lv-section > .lv-container {
+  margin-top: 12px;
+}
+
+html[data-design="retro2000"] #bio-root .lv-section--home > .lv-container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+html[data-design="retro2000"] #bio-root .lv-name,
+html[data-design="retro2000"] #bio-root .lv-page-title {
+  color: #000000;
+  text-shadow: 2px 2px 0 #ffffff;
+  animation: none;
+}
+
+html[data-design="retro2000"] #bio-root .lv-name:hover .lv-l {
+  animation: none;
+  text-shadow: 2px 2px 0 #ffffff;
+}
+
+html[data-design="retro2000"] #bio-root .lv-h2 {
+  margin-bottom: 12px;
+  padding-bottom: 5px;
+  border-bottom: 2px ridge #ffffff;
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-p,
+html[data-design="retro2000"] #bio-root .lv-prose {
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-link {
+  color: #0000ee;
+  text-decoration-color: #0000ee;
+}
+
+html[data-design="retro2000"] #bio-root .lv-link:visited {
+  color: #551a8b;
+}
+
+html[data-design="retro2000"] #bio-root .lv-link:hover {
+  color: #ffffff;
+  background: #000080;
+  text-decoration-color: #ffffff;
+}
+
+html[data-design="retro2000"] #bio-root .lv-proj,
+html[data-design="retro2000"] #bio-root .lv-contact-row,
+html[data-design="retro2000"] #bio-root .lv-exp {
+  border: 2px outset #ffffff;
+  border-radius: 0;
+  background: #c0c0c0;
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-proj:hover,
+html[data-design="retro2000"] #bio-root .lv-contact-row:hover,
+html[data-design="retro2000"] #bio-root .lv-exp:hover {
+  background: #000080;
+  color: #ffffff;
+}
+
+html[data-design="retro2000"] #bio-root .lv-proj-title,
+html[data-design="retro2000"] #bio-root .lv-proj-desc,
+html[data-design="retro2000"] #bio-root .lv-exp-main,
+html[data-design="retro2000"] #bio-root .lv-exp-date,
+html[data-design="retro2000"] #bio-root .lv-exp-role,
+html[data-design="retro2000"] #bio-root .lv-exp-role-mobile {
+  color: inherit;
+}
+
+html[data-design="retro2000"] #bio-root button,
+html[data-design="retro2000"] #bio-root input {
+  border-radius: 0;
+  font-family: Tahoma, "MS Sans Serif", Arial, sans-serif;
+}
+
+html[data-design="retro2000"] #bio-root .lv-icon-btn,
+html[data-design="retro2000"] #bio-root .lv-theme-btn,
+html[data-design="retro2000"] #bio-root .lv-time-machine,
+html[data-design="retro2000"] #bio-root .lv-more,
+html[data-design="retro2000"] #bio-root .lv-search {
+  border: 2px outset #ffffff;
+  background: #c0c0c0;
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-icon-btn:active,
+html[data-design="retro2000"] #bio-root .lv-theme-btn:active,
+html[data-design="retro2000"] #bio-root .lv-time-machine:active,
+html[data-design="retro2000"] #bio-root .lv-more:active,
+html[data-design="retro2000"] #bio-root .lv-search:active {
+  border-style: inset;
+  transform: translate(1px, 1px);
+}
+
+html[data-design="retro2000"] #bio-root .lv-side {
+  top: 78px;
+  right: 18px;
+  padding: 5px;
+  border: 3px outset #ffffff;
+  background: #c0c0c0;
+}
+
+html[data-design="retro2000"] #bio-root .lv-side-link {
+  min-width: 82px;
+  min-height: 30px;
+  justify-content: center;
+  padding: 0 10px;
+  border-bottom: 1px solid #808080;
+  border-radius: 0;
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-side-link:last-of-type {
+  border-bottom: 0;
+}
+
+html[data-design="retro2000"] #bio-root .lv-side-link:hover,
+html[data-design="retro2000"] #bio-root .lv-side-link:focus-visible {
+  background: #000080;
+  color: #ffffff;
+}
+
+html[data-design="retro2000"] #bio-root .lv-kbd-btn {
+  min-width: 82px;
+  min-height: 30px;
+  padding: 0 8px;
+  border-radius: 0;
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-kbd {
+  border: 1px solid #000000;
+  border-radius: 0;
+  background: #000080;
+  color: #ffffff;
+}
+
+html[data-design="retro2000"] #bio-root .lv-topbar {
+  background: #c0c0c0;
+  border-bottom: 3px outset #ffffff;
+}
+
+html[data-design="retro2000"] #bio-root .lv-menu-panel {
+  border: 3px outset #ffffff;
+  background: #c0c0c0;
+}
+
+html[data-design="retro2000"] #bio-root .lv-menu-link {
+  border: 0;
+  border-bottom: 1px solid #808080;
+  border-radius: 0;
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-footer {
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-copyright {
+  color: #000000;
+  font-family: "Courier New", Courier, monospace;
+}
+
+html[data-design="retro2000"] #bio-root .lv-tm-stage {
+  border: 3px outset #ffffff;
+  border-radius: 0;
+  background: #c0c0c0;
+  color: #000000;
+  box-shadow: 8px 8px 0 #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-tm-backdrop {
+  background-color: rgba(0, 0, 0, 0.55);
+  backdrop-filter: none;
+}
+
+html[data-design="retro2000"] #bio-root .lv-tm-readout {
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-tm-readout-path {
+  border: 1px inset #ffffff;
+  border-radius: 0;
+  background: #000080;
+  color: #ffffff;
+}
+
+html[data-design="retro2000"] #bio-root .lv-tm-caption {
+  color: #000000;
+  font-family: "Courier New", Courier, monospace;
+}
+
+html[data-design="retro2000"] #bio-root .lv-tm-caption-cursor,
+html[data-design="retro2000"] #bio-root .lv-tm-close {
+  border-radius: 0;
+  background: #c0c0c0;
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-tm-close {
+  border: 2px outset #ffffff;
+}
+
+html[data-design="retro2000"] #bio-root .lv-tm-close:active {
+  border-style: inset;
+}
+
+html[data-design="retro2000"] #bio-root .lv-tm-art-wrap {
+  border: 3px ridge #ffffff;
+  border-radius: 0;
+}
+
+html[data-design="retro2000"] #bio-root .lv-design-option {
+  padding: 0.5rem 0.5rem 0.625rem;
+  border: 2px inset #ffffff;
+  border-radius: 0;
+  background: #c0c0c0;
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-design-option:hover,
+html[data-design="retro2000"] #bio-root .lv-design-option[data-preview="true"] {
+  background: #000080;
+  color: #ffffff;
+  transform: none;
+}
+
+html[data-design="retro2000"] #bio-root .lv-design-option[data-selected="true"] {
+  border: 2px outset #ffffff;
+  background: #c0c0c0;
+  color: #000000;
+  box-shadow: none;
+}
+
+html[data-design="retro2000"] #bio-root .lv-design-option-title small,
+html[data-design="retro2000"] #bio-root .lv-design-check {
+  border: 1px solid #000000;
+  border-radius: 0;
+  background: #c0c0c0;
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-design-option:hover .lv-design-option-title small,
+html[data-design="retro2000"] #bio-root .lv-design-option[data-preview="true"] .lv-design-option-title small,
+html[data-design="retro2000"] #bio-root .lv-design-option:hover .lv-design-check,
+html[data-design="retro2000"] #bio-root .lv-design-option[data-preview="true"] .lv-design-check {
+  border-color: #ffffff;
+  background: #000080;
+  color: #ffffff;
+}
+
+html[data-design="retro2000"] #bio-root .lv-design-option-description,
+html[data-design="retro2000"] #bio-root .lv-design-note {
+  color: inherit;
+}
+
+html[data-design="retro2000"] #bio-root .lv-design-swatch--modern,
+html[data-design="retro2000"] #bio-root .lv-design-swatch--retro2000 {
+  border: 1px solid #000000;
+  border-radius: 0;
+}
+
+html[data-design="retro2000"] #bio-root .lv-space-card {
+  border: 4px ridge #ffffff;
+  border-radius: 0;
+  image-rendering: pixelated;
+}
+
+html[data-design="retro2000"] #bio-root .lv-palette {
+  border: 3px outset #ffffff;
+  border-radius: 0;
+  background: #c0c0c0;
+  color: #000000;
+  box-shadow: 8px 8px 0 #000000;
+  backdrop-filter: none;
+}
+
+html[data-design="retro2000"] #bio-root .lv-palette-search,
+html[data-design="retro2000"] #bio-root .lv-palette-footer,
+html[data-design="retro2000"] #bio-root .lv-palette-group h4,
+html[data-design="retro2000"] #bio-root .lv-palette-item-copy small {
+  border-color: #000000;
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-palette-field {
+  border: 2px inset #ffffff;
+  border-radius: 0;
+  background: #ffffff;
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-palette-item {
+  border-radius: 0;
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-palette-item:hover,
+html[data-design="retro2000"] #bio-root .lv-palette-item[data-active="true"] {
+  background: #000080;
+  color: #ffffff;
+}
+
+html[data-design="retro2000"] #bio-root .lv-palette-footer kbd,
+html[data-design="retro2000"] #bio-root .lv-palette-close {
+  border: 2px outset #ffffff;
+  border-radius: 0;
+  background: #c0c0c0;
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-dialog {
+  border: 3px outset #ffffff;
+  border-radius: 0;
+  background: #c0c0c0;
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-dialog-title,
+html[data-design="retro2000"] #bio-root .lv-dialog-desc,
+html[data-design="retro2000"] #bio-root .lv-dialog-stats {
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-dialog-close {
+  border: 2px outset #ffffff;
+  border-radius: 0;
+  background: #c0c0c0;
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-photos {
+  --ph-bg: #008080;
+  --ph-fg: #000000;
+  --ph-muted: #111111;
+  --ph-pill: #c0c0c0;
+  --ph-border: #000000;
+  --ph-active-bg: #000080;
+  --ph-active-fg: #ffffff;
+  background: #008080;
+  color: #000000;
+  image-rendering: pixelated;
+}
+
+html[data-design="retro2000"] #bio-root .lv-ph-pill,
+html[data-design="retro2000"] #bio-root .lv-ph-search {
+  border: 2px outset #ffffff;
+  border-radius: 0;
+  background: #c0c0c0;
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-ph-link {
+  border-radius: 0;
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-ph-link[data-active="true"] {
+  background: #000080;
+  color: #ffffff;
+}
+
+html[data-design="retro2000"] #bio-root .lv-ph-frame {
+  border: 3px outset #ffffff;
+  border-radius: 0;
+  background: #c0c0c0;
+}
+
+html[data-design="retro2000"] #bio-root .lv-ph-frame img {
+  box-shadow: none;
+}
+
+html[data-design="retro2000"] .lv-beetle,
+html[data-design="retro2000"] .lv-beetle-under {
+  image-rendering: pixelated;
+}
+
+html[data-design="retro2000"] #bio-root .lv-photos .lv-ph-empty {
+  border: 3px inset #ffffff;
+  border-radius: 0;
+  background: #c0c0c0;
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-studio-export,
+html[data-design="retro2000"] #bio-root .lv-studio-photo,
+html[data-design="retro2000"] #bio-root .lv-studio-drop,
+html[data-design="retro2000"] #bio-root .lv-studio-compose-pane {
+  border: 2px inset #ffffff;
+  border-radius: 0;
+  background: #c0c0c0;
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-btn,
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-chip {
+  border: 2px outset #ffffff;
+  border-radius: 0;
+  background: #c0c0c0;
+  color: #000000;
+  font-family: Tahoma, "MS Sans Serif", Arial, sans-serif;
+}
+
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-btn--primary {
+  background: #000080;
+  color: #ffffff;
+}
+
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-btn--primary:hover:not(:disabled) {
+  background: #1084d0;
+  color: #ffffff;
+}
+
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-field input,
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-field textarea,
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-body {
+  border: 2px inset #ffffff;
+  border-radius: 0;
+  background: #ffffff;
+  color: #000000;
+  font-family: Tahoma, "MS Sans Serif", Arial, sans-serif;
+}
+
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-field label,
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-hint,
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-status,
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-counter,
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-eyebrow,
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-subhead,
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-writing-head h3,
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-compose-head,
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-steps li,
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-export-head p,
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-tabs small,
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-writing-list button,
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-writing-list button small,
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-photo-size {
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-drop {
+  border: 2px dashed #ffffff;
+}
+
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-writing-list button:hover,
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-writing-list button[data-active="true"] {
+  background: #000080;
+  color: #ffffff;
+}
+
+html[data-design="retro2000"] #bio-root .lv-studio .lv-studio-tabs button[aria-selected="true"] {
+  border-bottom-color: #000000;
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-md-code,
+html[data-design="retro2000"] #bio-root .lv-md pre {
+  border: 2px inset #ffffff;
+  border-radius: 0;
+  background: #ffffff;
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-draft-tag,
+html[data-design="retro2000"] #bio-root .lv-draft-note {
+  border-radius: 0;
+  border-color: #000000;
+  background: #ffff00;
+  color: #000000;
+}
+
+html[data-design="retro2000"] #bio-root .lv-studio-warn {
+  border-radius: 0;
+  border-color: #000000;
+  background: #ffff00;
+  color: #000000;
+}
+
+@media (max-width: 700px) {
+  html[data-design="retro2000"] #bio-root .lv-section > .lv-container,
+  html[data-design="retro2000"] #bio-root .lv-home > .lv-container {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}

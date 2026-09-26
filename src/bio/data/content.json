@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "exportedAt": "2026-09-25T00:00:00.000Z",
+  "photos": [
+    {
+      "id": "plaza-de-mayo",
+      "src": "/photos/plaza-de-mayo-sm.jpg",
+      "fullSrc": "/photos/plaza-de-mayo.jpg",
+      "width": 736,
+      "height": 1308,
+      "location": "Plaza de Mayo, Buenos Aires",
+      "alt": "The Argentine flag flying over Plaza de Mayo, framed by trees",
+      "camera": "iPhone 15 Pro Max",
+      "lens": "Main camera, 24 mm",
+      "focalLength": "24 mm"
+    },
+    {
+      "id": "monumento-avion-malvinas",
+      "src": "/photos/monumento-avion-malvinas-sm.jpg",
+      "fullSrc": "/photos/monumento-avion-malvinas.jpg",
+      "width": 736,
+      "height": 1308,
+      "location": "Buenos Aires, Argentina",
+      "alt": "A propeller plane monument with a hand-painted banner reading \"Las Malvinas son Argentinas\"",
+      "camera": "iPhone 15 Pro Max",
+      "lens": "Main camera, 24 mm",
+      "focalLength": "24 mm"
+    },
+    {
+      "id": "marcha-funeral",
+      "src": "/photos/marcha-funeral-sm.jpg",
+      "fullSrc": "/photos/marcha-funeral.jpg",
+      "width": 736,
+      "height": 1308,
+      "location": "Argentina",
+      "alt": "A burning coffin held above a crowd during a march under a grey sky",
+      "camera": "iPhone 15 Pro Max",
+      "lens": "Main camera, 24 mm",
+      "focalLength": "24 mm"
+    },
+    {
+      "id": "marcha-messi",
+      "src": "/photos/marcha-messi-sm.jpg",
+      "fullSrc": "/photos/marcha-messi.jpg",
+      "width": 736,
+      "height": 1308,
+      "location": "Argentina",
+      "alt": "A street packed with people in Argentina football shirts, a Messi number 10 jersey in the foreground",
+      "camera": "iPhone 15 Pro Max",
+      "lens": "Main camera, 24 mm",
+      "focalLength": "24 mm"
+    }
+  ],
+  "posts": [
+    {
+      "id": "hello-and-what-this-place-is-for",
+      "title": "Hello, and what this place is for",
+      "summary": "Who I am, why this site exists, and what I plan to actually put on it.",
+      "date": "2026-09-25",
+      "readingTime": "3 min",
+      "tags": ["meta", "updates"],
+      "body": "Hey, I'm Lautaro. I'm 17, I'm based in Argentina, and this is the corner of the internet where I get to explain what I'm building instead of just shipping it.\n\nMost of what I make is only visible through its changelog. [QuasarTerm](https://github.com/machinebreak/quasarterm), [HardSeek](https://hardseek.net) and [BeetBench](https://beetbench.com) are the things you'd actually install. This is where I get to talk about the parts that don't fit in a release note: what broke, what I got wrong, and why a decision got made the way it did.\n\n## What's going to be here\n\n- **Writing.** Long posts about the products I'm building, the problems behind them, and the occasional dead end that turned out to be the useful part.\n- **Photos.** Wherever I am, on an iPhone. Not a portfolio, just a record of the year.\n- **Experiments.** Half-finished side projects, kept honest in public so they don't quietly die in a folder.\n\n## What I'm working on right now\n\n- **QuasarTerm** — an agent-aware terminal for managing AI CLI accounts and usage. It's the one I spend most of my nights on.\n- **HardSeek** — a hardware price metasearch engine, because the price of a GPU shouldn't require four browser tabs.\n- **BeetBench** — game benchmarks and FPS tracking, built for people who want the numbers instead of a rounded-up marketing claim.\n\nThe honest version of this post is a promise: I'll try to write here when I have something real to say, and I'll put photos up in between. If I disappear for three months, assume I got stuck on the terminal and send me a nudge.\n\nOne more thing. There's a time machine in the footer: it sends the whole site back to 2000, teal, silver and blinking underlines included. On some days that is a more accurate description of my relationship with the web than the one you're looking at.\n\nThat's it for the first post. The next one should be about why I'm rebuilding my agent workflow from scratch instead of patching it again."
+    }
+  ]
+}
